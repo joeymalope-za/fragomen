@@ -39,3 +39,5 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 - [Tailwind](https://tailwindcss.com/) - For styles
 
 ## Live on Vercel
+
+https://fragomen.vercel.app

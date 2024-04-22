@@ -12,12 +12,12 @@ interface sideNavItemProps {
 
 const getIcon = (icon: IconType, activeState: boolean): JSX.Element => {
 
-  /* Would be ideal an solution
+  /* Would be ideal an solution but because the assets didn't have consistent aspect ratio certain adjusts became necessary
   const IconToRender = Icons[icon]
 
     return (
       <IconToRender
-        className={cn(activeState ? "fill-[#374C5E]" : "fill-white", "w-4 h-4")}
+        className={cn(activeState ? "fill-nightBlue" : "fill-white", "w-4 h-4")}
       />
     );
   */
@@ -26,7 +26,7 @@ const getIcon = (icon: IconType, activeState: boolean): JSX.Element => {
       return (
         <Icons.home
           className={cn(
-            activeState ? "fill-[#374C5E]" : "fill-white",
+            activeState ? "fill-nightBlue" : "fill-white",
             "w-4 h-4",
           )}
         />
@@ -36,7 +36,7 @@ const getIcon = (icon: IconType, activeState: boolean): JSX.Element => {
       return (
         <Icons.newOrder
           className={cn(
-            activeState ? "fill-[#374C5E]" : "fill-white",
+            activeState ? "fill-nightBlue" : "fill-white",
             "w-4 h-4",
           )}
         />
@@ -46,7 +46,7 @@ const getIcon = (icon: IconType, activeState: boolean): JSX.Element => {
       return (
         <Icons.quickCheck
           className={cn(
-            activeState ? "fill-[#374C5E]" : "fill-white",
+            activeState ? "fill-nightBlue" : "fill-white",
             "w-4 h-4",
           )}
         />
@@ -56,7 +56,7 @@ const getIcon = (icon: IconType, activeState: boolean): JSX.Element => {
       return (
         <Icons.appTracker
           className={cn(
-            activeState ? "fill-[#374C5E]" : "fill-white",
+            activeState ? "fill-nightBlue" : "fill-white",
             "w-6 h-6",
           )}
         />
@@ -66,7 +66,7 @@ const getIcon = (icon: IconType, activeState: boolean): JSX.Element => {
       return (
         <Icons.myDocs
           className={cn(
-            activeState ? "fill-[#374C5E]" : "fill-white",
+            activeState ? "fill-nightBlue" : "fill-white",
             "w-6 h-6",
           )}
         />
@@ -76,7 +76,7 @@ const getIcon = (icon: IconType, activeState: boolean): JSX.Element => {
       return (
         <Icons.myProfile
           className={cn(
-            activeState ? "fill-[#374C5E]" : "fill-white",
+            activeState ? "fill-nightBlue" : "fill-white",
             "w-6 h-6",
           )}
         />
@@ -86,7 +86,7 @@ const getIcon = (icon: IconType, activeState: boolean): JSX.Element => {
       return (
         <Icons.more
           className={cn(
-            activeState ? "fill-[#374C5E]" : "fill-white",
+            activeState ? "fill-nightBlue" : "fill-white",
             "w-6 h-6",
           )}
         />

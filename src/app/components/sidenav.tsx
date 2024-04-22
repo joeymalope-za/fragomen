@@ -44,7 +44,7 @@ export default function SideNav({ className }: SideNavProps): JSX.Element {
 
   return (
     <div className={cn(className, "flex h-[calc(100vh-4rem)] absolute")}>
-      <div className="w-16 h-full p-0 flex flex-col items-center box-border bg-[#374C5E]">
+      <div className="w-16 h-full p-0 flex flex-col items-center box-border bg-nightBlue">
         {menuItems.map((menuItem) => (
           <SideNavItem
             key={menuItem.icon}

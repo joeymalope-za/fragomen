@@ -29,19 +29,19 @@ export default function Search({
       setSource(dataSource);
     }
   }, [searchParamater, source, dataSource]);
-  console.table(results);
+
   return (
     <div className="flex gap-4 flex-col min-h-32">
-      <label className="color-[#fff] font-[600]">{label}</label>
+      <label className="color-white font-[600]">{label}</label>
       <div
-        className="border-[1px] cursor-pointer border-[#8C94A8] rounded-full flex gap-2 justify-center items-center"
+        className="border-[1px] cursor-pointer border-gray rounded-full flex gap-2 justify-center items-center"
         onBlur={() => setIsActive(true)}
         onMouseOut={() => setIsActive(false)}
       >
         <input
           onChange={(e) => setSearchParameter(e.target.value)}
           className={cn(
-            isActive ? "border-[1px] border-[#14BDF3]" : "",
+            isActive ? "border-[1px] border-aquaBlue" : "",
             "bg-transparent h-[50px] p-2 pr-4 text-[14px] w-[80%] focus:border-none focus-within:border-none target:border-none active:border-none active:appearance-none blur:appearance-none outline-none hover:border-none blur:border-none",
           )}
           type="search"
@@ -49,7 +49,7 @@ export default function Search({
         <Icons.search />
       </div>
       {searchParamater.length !== 0 && (
-        <div className="bg-[#1A2632] py-4 px-8 gap-2">
+        <div className="bg-nightBlue py-4 px-8 gap-2">
           <span className="color-[#C5E8FF] font-[500] text-base">
             Filter label
           </span>
@@ -58,7 +58,7 @@ export default function Search({
               <input
                 checked={results.includes(el)}
                 type="checkBox"
-                className="border-solid border-[#14BDF3] border-[1px] mr-2"
+                className="border-solid border-aquaBlueborder-[1px] mr-2"
                 onChange={(e) => {
                   e.currentTarget.checked
                     ? setResults((res) => [...res, el])
@@ -67,7 +67,7 @@ export default function Search({
                       ]);
                 }}
               />
-              <span className="text-[#14BDF3]">{searchParamater}</span>
+              <span className="text-aquaBlue]">{searchParamater}</span>
               <span>{el.slice(searchParamater.length)}</span>
             </div>
           ))}

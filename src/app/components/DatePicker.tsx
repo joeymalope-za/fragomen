@@ -23,7 +23,7 @@ export default function DatePicker({
         value={formatDate(value)}
         onChange={(e) => onChange(e.target.value)}
         type="date"
-        className="bg-transparent border-solid border-[1px] h-[50px] box-border border-[#8C94A8] p-2 pr-4 rounded-lg text-[14px] focus:border-[#14BDF3]"
+        className="bg-transparent border-solid border-[1px] h-[50px] box-border border-gray p-2 pr-4 rounded-lg text-[14px] focus:border-aquaBlue"
       />
     </div>
   );

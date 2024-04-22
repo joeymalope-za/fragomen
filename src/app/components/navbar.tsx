@@ -12,7 +12,7 @@ export default function NavBar({ className }: navBarProps): JSX.Element {
     <nav
       className={cn(
         className,
-        "max-h-16 h-16 w-screen py-4 p-8 flex justify-between items-center box-border bg-[#374C5E] align-center",
+        "max-h-16 h-16 w-screen py-4 p-8 flex justify-between items-center box-border bg-nightBlue align-center",
       )}
     >
       <Logo />

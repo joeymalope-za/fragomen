@@ -6,7 +6,7 @@ export default function Avatar(): JSX.Element {
     <div className="">
       <Image
         src={"/christina.png"}
-        alt=""
+        alt="User avatar"
         width="30"
         height="30"
         className="rounded-full"

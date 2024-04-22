@@ -20,7 +20,7 @@ export default function Select({
       <select
         onChange={(e) => onChange(e.target.value)}
         value={value}
-        className="bg-transparent dark:text-white border-solid border-[1px] h-[50px] box-border border-[#8C94A8] p-2 pr-4 rounded-lg text-[14px] focus:border-[#14BDF3] active:appearance-none"
+        className="bg-transparent dark:text-white border-solid border-[1px] h-[50px] box-border border-gray p-2 pr-4 rounded-lg text-[14px] focus:border-aquaBlue active:appearance-none"
       >
         {dataSource.map((item) => (
           <option key={item}>{item}</option>
